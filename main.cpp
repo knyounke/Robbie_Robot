@@ -1,5 +1,4 @@
 #include "part.h"
-#include "part.cpp"
 
 using namespace std;
 
@@ -7,7 +6,7 @@ using namespace std;
 int main() 
 {
 
-  Part arm = new Part();
+  Part arm;
 
 return 0;
 }
