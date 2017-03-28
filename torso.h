@@ -4,7 +4,7 @@
 
 
 class Torso: public Part
- {
+{
     private:
 	int batteryCompartments;
     	 int armSockets;
@@ -21,6 +21,5 @@ class Torso: public Part
 	    void setArmSockets(int myArmSockets);
     
 };
-
 
 #endif

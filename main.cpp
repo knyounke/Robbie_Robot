@@ -1,5 +1,7 @@
 #include "part.h"
 #include "controller.h"
+#include "arm.h"
+#include "torso.h"
 
 #include <iostream>
 using namespace std;
