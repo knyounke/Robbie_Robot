@@ -6,8 +6,8 @@ all: main
 
 rebuild: clean main
 
-main: main.o controller.o part.o arm.o torso.o battery.o
-	$(CXX) $(CXXFLAGS) main.o controller.o part.o arm.o torso.o battery.o
+main: main.o controller.o part.o arm.o torso.o battery.o locomotor.o head.o
+	$(CXX) $(CXXFLAGS) main.o controller.o part.o arm.o torso.o battery.o locomotor.o head.o
 main.o: main.cpp controller.h part.h arm.h torso.h battery.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
 part.o: part.cpp part.h
@@ -20,9 +20,10 @@ torso.o: torso.cpp torso.h
 	$(CXX) $(CXXFLAGS) -c torso.cpp
 battery.o: battery.cpp battery.h
 	$(CXX) $(CXXFLAGS) -c battery.cpp
-battery.o: head.cpp head.h
+head.o: head.cpp head.h
 	$(CXX) $(CXXFLAGS) -c head.cpp
-
+locomotor.o: locomotor.cpp locomotor.h
+	$(CXX) $(CXXFLAGS) -c locomotor.cpp
 
 
 

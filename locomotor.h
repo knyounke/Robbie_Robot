@@ -5,7 +5,7 @@
 
 
 
-class Locomotor : public Part
+class Locomotor : private Part
 {
    private:
 

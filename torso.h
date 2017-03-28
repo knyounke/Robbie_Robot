@@ -3,7 +3,7 @@
 
 
 
-class Torso: public Part
+class Torso: private Part
 {
     private:
 	int batteryCompartments;

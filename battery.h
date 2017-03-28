@@ -2,7 +2,7 @@
 #define ___BATTERY 2017
 
 
-class Battery : public Part
+class Battery : private Part
 {
     private:
 	 double energy;
