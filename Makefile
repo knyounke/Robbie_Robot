@@ -20,6 +20,10 @@ torso.o: torso.cpp torso.h
 	$(CXX) $(CXXFLAGS) -c torso.cpp
 battery.o: battery.cpp battery.h
 	$(CXX) $(CXXFLAGS) -c battery.cpp
+battery.o: head.cpp head.h
+	$(CXX) $(CXXFLAGS) -c head.cpp
+
+
 
 
 clean:
