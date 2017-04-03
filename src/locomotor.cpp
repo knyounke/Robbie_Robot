@@ -17,12 +17,12 @@
 	  maxSpeed = _maxSpeed;
 	}
 
-   	void setPowerConsumptionRate(double _pcr)
+   	void Locomotor::setPowerConsumptionRate(double _pcr)
 	{
 	  pcr = _pcr;
 	}
 
-        double powerConsumed(int speed)
+        double Locomotor::powerConsumed(int speed)
 	{
 	   double powerConsumed;
 	   powerConsumed = pcr * speed;

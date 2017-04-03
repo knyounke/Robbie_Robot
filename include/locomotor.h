@@ -13,7 +13,7 @@ class Locomotor : private Part
     double pcr; //power consumption rate
 
     public:
-       Locomotor() {};
+       Locomotor() {}
    	double getMaxSpeed();
     	double getPowerConsumtionRate();
    	void setMaxSpeed(double _maxSpeed);

@@ -17,14 +17,15 @@ class Part
     	string _type;
     	double _price;
         string _description;
-    	static int _numberOfParts; 
+    	int _numberOfParts; 
+
     public:
 	Part(string name, string type, double price, string description): _name{name}, _partNumber{_numberOfParts++}, _type{type}, _price{price}, _description{description} {};
     	Part(){ };
 
     //getters
    	string getName();
-   	static int getNumberOfParts();
+   	int getNumberOfParts();
     	int getPartNumber();
     	string getDescription();
         string getType();
@@ -36,7 +37,7 @@ class Part
     	void setType(string type);
    	void setPrice(double price);
     	void setDescription(string description);
-    	static void addParts();
+    	void addParts();
 };
 
 #endif
