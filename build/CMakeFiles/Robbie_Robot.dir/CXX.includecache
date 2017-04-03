@@ -110,6 +110,12 @@ vector
 exception
 -
 
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
+part.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
+robot_model.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
+
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.cpp
 part.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h

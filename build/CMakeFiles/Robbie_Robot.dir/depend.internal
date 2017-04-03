@@ -33,6 +33,10 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o
 CMakeFiles/Robbie_Robot.dir/src/part.cpp.o
  ../include/part.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.cpp
+CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o
+ ../include/part.h
+ ../include/robot_model.h
+ /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
 CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o
  ../include/part.h
  ../include/torso.h

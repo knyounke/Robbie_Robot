@@ -24,8 +24,8 @@ class Robot_Model
 
 	Robot_Model(){}
 	Robot_Model(string n, double p) :  name{n}, price{p}, model_num{model_num++} { }
-	double get_Parts_Total();
-	void set_Name(string name);
+	double get_Parts_Total_Cost();
+	void set_Name(string n);
 	string get_Name();
 	void set_Price(double p);
 	double get_Price();
