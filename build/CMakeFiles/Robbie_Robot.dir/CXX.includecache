@@ -42,6 +42,10 @@ vector
 exception
 -
 
+../include/robot_model.h
+string
+-
+
 ../include/torso.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp
@@ -87,6 +91,8 @@ battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
 head.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
+robot_model.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
 iostream
 -
 

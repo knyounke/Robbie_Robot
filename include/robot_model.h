@@ -1,12 +1,5 @@
 #ifndef ___ROBOT_MODEL__H
 #define ___ROBOT_MODEL_ 2017
-#include "part.h"
-#include "controller.h"
-#include "arm.h"
-#include "torso.h"
-#include "head.h"
-#include "locomotor.h"
-#include "battery.h"
 #include <string>
 
 using namespace std;
@@ -52,4 +45,6 @@ class Robot_Model
 	int get_Locomotor();
 
 
-}
+};
+
+#endif

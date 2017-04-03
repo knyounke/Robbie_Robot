@@ -27,6 +27,7 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o
  ../include/controller.h
  ../include/head.h
  ../include/part.h
+ ../include/robot_model.h
  ../include/torso.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
 CMakeFiles/Robbie_Robot.dir/src/part.cpp.o

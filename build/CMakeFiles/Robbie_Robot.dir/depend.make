@@ -26,6 +26,7 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/battery.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/controller.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/head.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/part.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/robot_model.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/torso.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../src/main.cpp
 

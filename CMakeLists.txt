@@ -1,6 +1,9 @@
 #Specify the version being used as well as the language
 cmake_minimum_required(VERSION 2.6)
 
+set(CMAKE_CXX_STANDARD 11)
+
+
 #Name of the project
 project(Robbie_Robot)
 
