@@ -65,8 +65,8 @@ battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp
 controller.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.h
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
+robot_model.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
 part.h
@@ -79,6 +79,8 @@ part.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
+robot_model.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
 part.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 controller.h
@@ -91,8 +93,6 @@ battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
 head.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
-robot_model.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
 iostream
 -
 
@@ -111,8 +111,6 @@ exception
 -
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 robot_model.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
 

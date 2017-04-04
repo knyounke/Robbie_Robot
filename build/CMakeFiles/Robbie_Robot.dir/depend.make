@@ -12,6 +12,7 @@ CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: ../src/battery.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/controller.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/part.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/robot_model.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../src/controller.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/head.cpp.o: ../include/part.h
@@ -33,7 +34,6 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Robbie_Robot.dir/src/part.cpp.o: ../include/part.h
 CMakeFiles/Robbie_Robot.dir/src/part.cpp.o: ../src/part.cpp
 
-CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o: ../include/part.h
 CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o: ../include/robot_model.h
 CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o: ../src/robot_model.cpp
 

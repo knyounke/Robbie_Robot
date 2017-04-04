@@ -1,5 +1,5 @@
-#ifndef ___ROBOT_MODEL__H
-#define ___ROBOT_MODEL_ 2017
+#ifndef ROBOT_MODEL__H
+#define ROBOT_MODEL_ 2017
 #include <string>
 
 using namespace std;
@@ -22,8 +22,7 @@ class Robot_Model
 
 	public:
 
-	Robot_Model(){}
-	Robot_Model(string n, double p) :  name{n}, price{p}, model_num{model_num++} { }
+	Robot_Model(string n, double p);
 	double get_Parts_Total_Cost();
 	void set_Name(string n);
 	string get_Name();

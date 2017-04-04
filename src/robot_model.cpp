@@ -1,7 +1,8 @@
-#include "part.h"
-
 #include "robot_model.h"
 
+
+
+Robot_Model::Robot_Model(string n, double p) : name{n}, price{p} { };
 
 double Robot_Model::get_Parts_Total_Cost()
 {
