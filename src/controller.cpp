@@ -13,7 +13,7 @@ using namespace std;
 
 	void Controller::createPart()
 	 {
-		bool b = true;
+		
 		int choice;
 		cout << "What would you like to create?" << endl;
 		cout << "1) New Head" << endl;
@@ -22,8 +22,9 @@ using namespace std;
 		cout << "4) New Battery" << endl;
 		cout << "5) New Locomotor"<< endl;
 		cout << "6) Exit" << endl;
+		cin >> choice;
 
-	while(b) {
+	
 	switch(choice)
 	{
 		case 1:
@@ -42,12 +43,12 @@ using namespace std;
 			newLocomotor();
 			break;
 		case 6:
-			b = false;
 			return;
+		
 		default:
 			cout << "Error. Please enter a correct number 1 through 6." << endl;
 
-	} }
+	} 
 
 		
 	
