@@ -3,8 +3,55 @@
 
 using namespace std;
 
+	void Controller::newBattery() {}
+	void Controller::newTorso() {}
+	void Controller::newHead() {}
+	void Controller::newArm() {}
+	void Controller::newLocomotor() {}
 
-	void Controller::createPart() {}
+
+
+	void Controller::createPart()
+	 {
+		bool b = true;
+		int choice;
+		cout << "What would you like to create?" << endl;
+		cout << "1) New Head" << endl;
+		cout << "2) New Arm" << endl;
+		cout << "3) New Torso" << endl;
+		cout << "4) New Battery" << endl;
+		cout << "5) New Locomotor"<< endl;
+		cout << "6) Exit" << endl;
+
+	while(b) {
+	switch(choice)
+	{
+		case 1:
+			newHead();
+			break;
+		case 2:
+			newArm();
+			break;
+		case 3:
+			newTorso();
+			break;
+		case 4:
+			newBattery();
+			break;
+		case 5:
+			newLocomotor();
+			break;
+		case 6:
+			b = false;
+			return;
+		default:
+			cout << "Error. Please enter a correct number 1 through 6." << endl;
+
+	} }
+
+		
+	
+	}
 	void Controller::printParts() {}
 	void Controller::createModel() {}
 	void Controller::printModels() {}

@@ -22,6 +22,11 @@ class Controller
 	void printModels();
 	void editPart();
 	void editModel();
+	void newBattery();
+	void newTorso();
+	void newHead();
+	void newArm();
+	void newLocomotor();
 
 
 };
