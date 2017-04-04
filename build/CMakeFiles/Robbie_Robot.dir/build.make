@@ -177,9 +177,33 @@ CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o.provides: CMakeFiles/Robbie_Robot.di
 CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o.provides.build: CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o
 
 
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o: CMakeFiles/Robbie_Robot.dir/flags.make
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o: ../src/shop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o -c /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.cpp
+
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robbie_Robot.dir/src/shop.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.cpp > CMakeFiles/Robbie_Robot.dir/src/shop.cpp.i
+
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robbie_Robot.dir/src/shop.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.cpp -o CMakeFiles/Robbie_Robot.dir/src/shop.cpp.s
+
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.requires:
+
+.PHONY : CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.requires
+
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.provides: CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.provides.build
+.PHONY : CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.provides
+
+CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.provides.build: CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o
+
+
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: CMakeFiles/Robbie_Robot.dir/flags.make
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: ../src/battery.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o -c /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o.provides.build: CMakeFiles/Robbie_
 
 CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o: CMakeFiles/Robbie_Robot.dir/flags.make
 CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o: ../src/arm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o -c /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/arm.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o.provides.build: CMakeFiles/Robbie_Robo
 
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: CMakeFiles/Robbie_Robot.dir/flags.make
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Robbie_Robot.dir/src/main.cpp.o -c /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o.provides.build: CMakeFiles/Robbie_Rob
 
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: CMakeFiles/Robbie_Robot.dir/flags.make
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../src/controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o -c /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.i: cmake_force
@@ -280,6 +304,7 @@ Robbie_Robot_OBJECTS = \
 "CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o" \
 "CMakeFiles/Robbie_Robot.dir/src/head.cpp.o" \
 "CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o" \
+"CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o" \
 "CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o" \
 "CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o" \
 "CMakeFiles/Robbie_Robot.dir/src/main.cpp.o" \
@@ -293,13 +318,14 @@ Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/head.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o
+Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/main.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/build.make
 Robbie_Robot: CMakeFiles/Robbie_Robot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Robbie_Robot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Robbie_Robot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Robbie_Robot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -312,6 +338,7 @@ CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/locomotor.
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o.requires
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/head.cpp.o.requires
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o.requires
+CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o.requires
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o.requires
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o.requires
 CMakeFiles/Robbie_Robot.dir/requires: CMakeFiles/Robbie_Robot.dir/src/main.cpp.o.requires

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/head.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/torso.cpp.o"
+  "CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/main.cpp.o"

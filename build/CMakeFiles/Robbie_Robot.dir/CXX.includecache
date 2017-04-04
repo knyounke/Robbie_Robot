@@ -17,6 +17,8 @@ controller.h
 ../include/controller.h
 part.h
 ../include/part.h
+shop.h
+../include/shop.h
 iostream
 -
 string
@@ -45,6 +47,28 @@ exception
 ../include/robot_model.h
 string
 -
+
+../include/shop.h
+part.h
+../include/part.h
+robot_model.h
+../include/robot_model.h
+torso.h
+../include/torso.h
+arm.h
+../include/arm.h
+head.h
+../include/head.h
+locomotor.h
+../include/locomotor.h
+iostream
+-
+string
+-
+vector
+-
+battery.h
+../include/battery.h
 
 ../include/torso.h
 
@@ -113,6 +137,10 @@ exception
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
 robot_model.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
+
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.cpp
+shop.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.cpp
 part.h

@@ -1,7 +1,7 @@
 #ifndef ___CONTROLLER_H
 #define ___CONTROLLER_H 2017
 #include "part.h"
-
+#include "shop.h"
 #include <iostream>
 #include <string>
 #include <vector>

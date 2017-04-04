@@ -339,6 +339,33 @@ src/robot_model.cpp.s:
 	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.s
 .PHONY : src/robot_model.cpp.s
 
+src/shop.o: src/shop.cpp.o
+
+.PHONY : src/shop.o
+
+# target to build an object file
+src/shop.cpp.o:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o
+.PHONY : src/shop.cpp.o
+
+src/shop.i: src/shop.cpp.i
+
+.PHONY : src/shop.i
+
+# target to preprocess a source file
+src/shop.cpp.i:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/shop.cpp.i
+.PHONY : src/shop.cpp.i
+
+src/shop.s: src/shop.cpp.s
+
+.PHONY : src/shop.s
+
+# target to generate assembly for a file
+src/shop.cpp.s:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/shop.cpp.s
+.PHONY : src/shop.cpp.s
+
 src/torso.o: src/torso.cpp.o
 
 .PHONY : src/torso.o
@@ -399,6 +426,9 @@ help:
 	@echo "... src/robot_model.o"
 	@echo "... src/robot_model.i"
 	@echo "... src/robot_model.s"
+	@echo "... src/shop.o"
+	@echo "... src/shop.i"
+	@echo "... src/shop.s"
 	@echo "... src/torso.o"
 	@echo "... src/torso.i"
 	@echo "... src/torso.s"

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Arm : private Part
+class Arm : public Part
 {
     private:
       double _pcr; //power consumption rate
