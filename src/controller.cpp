@@ -3,11 +3,135 @@
 
 using namespace std;
 
-	void Controller::newBattery() {}
-	void Controller::newTorso() {}
-	void Controller::newHead() {}
-	void Controller::newArm() {}
-	void Controller::newLocomotor() {}
+	void Controller::newBattery() 
+	{
+
+	string bname;
+	string bdescription;
+	double bprice;
+
+
+	cout << "----Create Battery----" << endl;
+	cout << "Name: " << endl;
+	cin.ignore();
+	getline(cin, bname);
+
+	cout << "Enter price: " << endl;
+	cin >> bprice;
+		if(bprice < 0)
+		cout << "Invalid price. Cannot be negative." << endl;
+	cout << "Description: " << endl;
+	cin.ignore();
+	getline(cin, bdescription);
+	
+	
+	}
+
+	void Controller::newTorso() 
+	{
+
+
+	string tname;
+	string tdescription;
+	double tprice;
+
+
+	cout << "----Create Torso----" << endl;
+	cout << "Name: " << endl;
+	cin.ignore();
+	getline(cin, tname);
+
+	cout << "Enter price: " << endl;
+	cin >> tprice;
+		if(tprice < 0)
+		cout << "Invalid price. Cannot be negative." << endl;
+
+	cout << "Description: " << endl;
+	cin.ignore();
+	getline(cin, tdescription);
+	
+	}
+
+
+	void Controller::newHead() 
+	{
+
+	
+
+	string hname;
+	string hdescription;
+	double hprice;
+
+
+	cout << "----Create Head----" << endl;
+	cout << "Name: " << endl;
+	cin.ignore();
+	getline(cin, hname);
+
+	cout << "Enter price: " << endl;
+	cin >> hprice;
+		if(hprice < 0)
+		cout << "Invalid price. Cannot be negative." << endl;
+
+	cout << "Description: " << endl;
+	cin.ignore();
+	getline(cin, hdescription);
+	}
+
+	void Controller::newArm()
+	 {
+	
+	
+
+	string aname;
+	string adescription;
+	double aprice;
+
+
+	cout << "----Create Arm----" << endl;
+	cout << "Name: " << endl;
+	cin.ignore();
+	getline(cin, aname);
+
+	cout << "Enter price: " << endl;
+	cin >> aprice;
+		if(aprice < 0)
+		cout << "Invalid price. Cannot be negative." << endl;
+
+	cout << "Description: " << endl;
+	cin.ignore();
+	getline(cin, adescription);
+
+
+	}
+
+	void Controller::newLocomotor() 
+	{
+
+	
+	
+
+	string lname;
+	string ldescription;
+	double lprice;
+
+
+	cout << "----Create Locomotor----" << endl;
+	cout << "Name: " << endl;
+	cin.ignore();
+	getline(cin, lname);
+
+	cout << "Enter price: " << endl;
+	cin >> lprice;
+		if(lprice < 0)
+		cout << "Invalid price. Cannot be negative." << endl;
+
+	cout << "Description: " << endl;
+	cin.ignore();
+	getline(cin, ldescription);
+
+
+	}
 
 
 
