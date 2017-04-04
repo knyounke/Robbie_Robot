@@ -5,14 +5,14 @@
 #include "torso.h"
 #include "battery.h"
 #include "head.h"
+#include "shop.h"
+
 #include <iostream>
 using namespace std;
 
 
 int main() 
 {
-  vector<Robot_Model> * modelsList;
-  vector<Part> * partsList;
 
   Controller c;
 

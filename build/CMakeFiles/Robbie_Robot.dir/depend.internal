@@ -3,14 +3,8 @@
 
 CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o
  ../include/arm.h
- ../include/battery.h
  ../include/controller.h
- ../include/head.h
- ../include/locomotor.h
  ../include/part.h
- ../include/robot_model.h
- ../include/shop.h
- ../include/torso.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o
  ../include/battery.h

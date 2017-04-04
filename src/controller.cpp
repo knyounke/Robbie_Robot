@@ -1,5 +1,12 @@
 #include "controller.h"
+#include "shop.h"
+#include "battery.h"
+#include "part.h"
+#include "locomotor.h"
 #include "robot_model.h"
+#include "torso.h"
+#include "arm.h"
+#include "head.h"
 
 using namespace std;
 
@@ -177,8 +184,85 @@ using namespace std;
 		
 	
 	}
-	void Controller::printParts() {}
-	void Controller::createModel() {}
+	void Controller::printParts(int t) 
+	{
+/*
+	vector< vector<Part> > vectorOfParts = Shop.robotParts;
+        vector<Torso> torsos = vectorOfParts[0];
+        vector<Head> heads = vectorOfParts[1];
+        vector<Arm> arms = vectorOfParts[2];
+        vector<Locomotor> locomotors = vectorOfParts[3];
+        vector<Battery> batteries = vectorOfParts[4];
+
+	string name;
+	switch(t){
+                case 0: 
+                    name = "Torsos";
+                    break;
+                case 1:
+                    name = "Heads";
+                    break;
+                case 2:
+                    name = "Arms";
+                    break;
+                case 3:
+                    name = "Locomotors";
+                    break;
+                case 4:
+                    name = "Batteries";
+                    break;
+                default:
+                 	cout<< "Unknown category." << endl;
+                    return;
+            }
+            
+ 		cout << name << ": " << endl;
+             cout << "Part Number, Name, Price, Description" << endl;
+            for(int j = 0; j < vectorOfPart<t>.size; j++)
+            {
+                if(vectorOfParts[t][j] != null){
+                cout << vectorOfParts[t][j].getPartNumber() << ", " <<
+                cout << vectorOfParts[t][j].getName() << ", " <<
+                cout << vectorOfParts[t][j].getDescription() << ", " << 
+                cout << vectorOfParts[t][j].getPrice() << endl;
+        
+                }
+            }
+	  */
+
+	}
+	void Controller::createModel() 
+	{
+ /*
+	vector< vector<Part> > vectorOfParts = Shop.robotParts;
+        vector<Torso> torsos = Shop.getTorsoVector();
+        vector<Head> heads = Shop.getHeadVector();
+        vector<Arm> arms = Shop.getArmVector();
+        vector<Locomotor> locomotors = Shop.getLocomotorVector();
+        vector<Battery> batteries = Shop.getBatteryVector();
+   
+        string modelName;
+	cout << "Enter a name for this model: " << endl;
+	cin.ignore();
+	getline(cin, modelName);
+	
+	//show options of parts
+	cout << "Available Torsos: " << endl;
+	printParts(0);
+
+	cout <<"Available Heads: " << endl;
+	printParts(1);
+
+	cout <<"Available Arms: " << endl;
+	printParts(2);
+
+	cout <<"Available Batteries: " << endl;
+	printParts(4);
+	
+	cout <<"Available Locomotors: " << endl;
+	printParts(3);
+*/
+	}
 	void Controller::printModels() {}
 	void Controller::editPart() {}
 	void Controller::editModel() {}
@@ -206,7 +290,11 @@ using namespace std;
 	     createModel();
 		break;
 	case 3:
-	     printParts();
+	      printParts(0);
+		printParts(1);
+		printParts(2);
+		printParts(3);
+		printParts(4);
 		break;
 	case 4:
 	     printModels();

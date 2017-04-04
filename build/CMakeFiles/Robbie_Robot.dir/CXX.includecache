@@ -17,8 +17,6 @@ controller.h
 ../include/controller.h
 part.h
 ../include/part.h
-shop.h
-../include/shop.h
 iostream
 -
 string
@@ -89,8 +87,22 @@ battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp
 controller.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.h
+shop.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
+battery.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
+part.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
+locomotor.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.h
 robot_model.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
+torso.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.h
+arm.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.h
+head.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
 part.h
@@ -117,6 +129,8 @@ battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
 head.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
+shop.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
 iostream
 -
 

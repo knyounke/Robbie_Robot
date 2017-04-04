@@ -1,5 +1,6 @@
 #ifndef ___CONTROLLER_H
 #define ___CONTROLLER_H 2017
+
 #include "part.h"
 #include "robot_model.h"
 #include "torso.h"
@@ -9,8 +10,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 #include "battery.h"
+
+
 class Shop
 {
 
@@ -30,17 +32,12 @@ private:
 
 
 public:
-
+	Shop() {}
 	void createTorso(string n, double p, string d);
 	void createBattery(string n, double p, string d);
 	void createHead(string n, double p, string d);
 	void createArm(string n, double p, string d);
 	void createLocomotor(string n, double p, string d);
-
-	
-
-
-
 
 
 };

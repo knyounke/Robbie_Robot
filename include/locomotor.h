@@ -4,7 +4,6 @@
 #include "part.h"
 
 
-
 class Locomotor : public Part
 {
    private:
