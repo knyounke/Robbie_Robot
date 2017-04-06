@@ -155,31 +155,36 @@ using namespace std;
 		cout << "6) Exit" << endl;
 		cin >> choice;
 
-	
 	switch(choice)
 	{
 		case 1:
 			newHead();
+			Controller::menu();
 			break;
 		case 2:
 			newArm();
+			Controller::menu();
 			break;
 		case 3:
 			newTorso();
+			Controller::menu();
 			break;
 		case 4:
 			newBattery();
+			Controller::menu();
 			break;
 		case 5:
 			newLocomotor();
+			Controller::menu();
 			break;
 		case 6:
 			return;
 		
 		default:
 			cout << "Error. Please enter a correct number 1 through 6." << endl;
+			
 
-	} 
+	} if (choice < 1 || choice > 6) { Controller::createPart();}
 
 		
 	
@@ -187,7 +192,7 @@ using namespace std;
 	void Controller::printParts(int t) 
 	{
 /*
-	vector< vector<Part> > vectorOfParts = Shop.robotParts;
+	vector< vector<Part*> > vectorOfParts = Shop.robotParts;
         vector<Torso> torsos = vectorOfParts[0];
         vector<Head> heads = vectorOfParts[1];
         vector<Arm> arms = vectorOfParts[2];
