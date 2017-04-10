@@ -1,6 +1,6 @@
 #ifndef ___CONTROLLER_H
 #define ___CONTROLLER_H 2017
-
+#include <iostream>
 #include "part.h"
 #include "robot_model.h"
 #include "torso.h"
@@ -39,7 +39,8 @@ public:
 	void createHead(string n, double p, string d);
 	void createArm(string n, double p, string d);
 	void createLocomotor(string n, double p, string d);
-
+	void saveShop(ostream& file);
+	void loadShop(istream& is);
 
 };
 

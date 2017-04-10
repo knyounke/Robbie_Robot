@@ -28,4 +28,8 @@
 	   powerConsumed = pcr * speed;
            return powerConsumed;
 	}
+	void save_locomotor()
+	{
+
+	}
 

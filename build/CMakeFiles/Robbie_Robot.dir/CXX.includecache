@@ -29,6 +29,8 @@ string
 -
 
 ../include/head.h
+part.h
+../include/part.h
 
 ../include/locomotor.h
 part.h
@@ -59,6 +61,8 @@ string
 -
 
 ../include/shop.h
+iostream
+-
 part.h
 ../include/part.h
 robot_model.h
@@ -121,8 +125,8 @@ customer.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
+head.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.cpp
 locomotor.h

@@ -24,6 +24,7 @@ class Order
 	int getOrderNumber();
 	int getQuantity();
 	Robot_Model getRobotModel();
+	void save_order();
 
 
 

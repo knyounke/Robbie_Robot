@@ -69,3 +69,8 @@ using namespace std;
 	{
            _numberOfParts++;
         }
+	
+	void Part::savePart()
+	{
+
+	}

@@ -22,3 +22,9 @@
     powerConsumed = speed * _pcr;
     return powerConsumed;
    }
+
+void save_arm()
+{
+
+
+}

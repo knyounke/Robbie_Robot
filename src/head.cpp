@@ -1,17 +1,11 @@
-#include "part.h"
+#include "head.h"
 
 
-using namespace std;
+	void save_head()
+	{
 
-
-
-class Head : public Part
-{
-    
-   public:
-	Head () {};
+	}
     
     
-    
-};
+   
 

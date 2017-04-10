@@ -113,3 +113,9 @@ int Robot_Model::get_Locomotor()
 
 return locomotor;
 };
+
+void save_model()
+{
+
+
+}

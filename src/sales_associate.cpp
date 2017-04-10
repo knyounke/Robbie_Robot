@@ -27,3 +27,8 @@ string const Sales_Associate::getType()
 return type;
 }
 
+void Sales_Associate::save_associate()
+{
+
+}
+

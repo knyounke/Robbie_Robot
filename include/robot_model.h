@@ -42,7 +42,7 @@ class Robot_Model
 	int get_Arm2();
 	int get_Head();
 	int get_Locomotor();
-
+	void save_model();
 
 };
 

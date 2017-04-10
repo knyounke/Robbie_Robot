@@ -18,7 +18,7 @@ class Locomotor : public Part
    	void setMaxSpeed(double _maxSpeed);
    	void setPowerConsumptionRate(double _pcr);
         double powerConsumed(int speed);
-
+	void save_locomotor();
 };
 
 

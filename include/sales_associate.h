@@ -24,6 +24,7 @@ class Sales_Associate
 
     	void setType(string t);	
 	string const getType();
+	void save_associate();
 
 
 };

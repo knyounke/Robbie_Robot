@@ -16,6 +16,7 @@ class Arm : public Part
        void setPowerConsumptionRate(double pcr);
        double getPowerConsumptionRate();
        double powerConsumed(int speed);
+       void save_arm();
 };
     
     

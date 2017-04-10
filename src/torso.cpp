@@ -25,3 +25,7 @@ using namespace std;
 
 		    armSockets = _armSockets;
 		}
+	void Torso::save_torso()
+	{
+
+	}

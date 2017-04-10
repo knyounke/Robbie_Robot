@@ -26,3 +26,9 @@ int const Customer::getCustomerNumber()
 {
 return customerNumber;
 }
+
+void Customer::save_customer()
+{
+
+
+}

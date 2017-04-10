@@ -19,7 +19,7 @@ class Torso: public Part
 	    // setters
 	    void setBatteryCompartments(int myBatteryCompartments);
 	    void setArmSockets(int myArmSockets);
-    
+    	    void save_torso();
 };
 
 #endif

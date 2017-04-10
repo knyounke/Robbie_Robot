@@ -26,4 +26,9 @@ using namespace std;
 
 	 maxPower = _maxPower;
 	}
+
+	void save_battery()
+	{
+
+	}
     

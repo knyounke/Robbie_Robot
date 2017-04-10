@@ -25,6 +25,7 @@ CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o
  ../include/customer.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.cpp
 CMakeFiles/Robbie_Robot.dir/src/head.cpp.o
+ ../include/head.h
  ../include/part.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
 CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o

@@ -38,6 +38,8 @@ class Part
    	void setPrice(double price);
     	void setDescription(string description);
     	void addParts();
+
+	void savePart();
 };
 
 #endif

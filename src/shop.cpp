@@ -66,3 +66,15 @@
 		locomotorcount++;
 
 	}
+
+	void Shop::saveShop(ostream& os)
+{
+
+
+}
+
+	void Shop::loadShop(istream& is)
+{
+
+
+}

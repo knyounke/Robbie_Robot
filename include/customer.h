@@ -21,7 +21,7 @@ class Customer
     	void setBill(double bill);
  	double const getBill();
      	int const getCustomerNumber();
-
+	void save_customer();
 };
 
 
