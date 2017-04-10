@@ -24,6 +24,10 @@ string
 vector
 -
 
+../include/customer.h
+string
+-
+
 ../include/head.h
 
 ../include/locomotor.h
@@ -107,6 +111,10 @@ arm.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.h
 head.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
+
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.cpp
+customer.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
 part.h

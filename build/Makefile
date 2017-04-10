@@ -204,6 +204,33 @@ src/controller.cpp.s:
 	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
+src/customer.o: src/customer.cpp.o
+
+.PHONY : src/customer.o
+
+# target to build an object file
+src/customer.cpp.o:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o
+.PHONY : src/customer.cpp.o
+
+src/customer.i: src/customer.cpp.i
+
+.PHONY : src/customer.i
+
+# target to preprocess a source file
+src/customer.cpp.i:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/customer.cpp.i
+.PHONY : src/customer.cpp.i
+
+src/customer.s: src/customer.cpp.s
+
+.PHONY : src/customer.s
+
+# target to generate assembly for a file
+src/customer.cpp.s:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/customer.cpp.s
+.PHONY : src/customer.cpp.s
+
 src/head.o: src/head.cpp.o
 
 .PHONY : src/head.o
@@ -438,6 +465,9 @@ help:
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/customer.o"
+	@echo "... src/customer.i"
+	@echo "... src/customer.s"
 	@echo "... src/head.o"
 	@echo "... src/head.i"
 	@echo "... src/head.s"

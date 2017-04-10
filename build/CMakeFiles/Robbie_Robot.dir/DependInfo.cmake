@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o"
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o"
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o"
+  "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o"
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/head.cpp.o"
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o"
   "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp" "/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir/src/main.cpp.o"

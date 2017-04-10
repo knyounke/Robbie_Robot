@@ -21,6 +21,9 @@ CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/shop.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/torso.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../src/controller.cpp
 
+CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o: ../include/customer.h
+CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o: ../src/customer.cpp
+
 CMakeFiles/Robbie_Robot.dir/src/head.cpp.o: ../include/part.h
 CMakeFiles/Robbie_Robot.dir/src/head.cpp.o: ../src/head.cpp
 
