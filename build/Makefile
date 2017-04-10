@@ -285,6 +285,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/order.o: src/order.cpp.o
+
+.PHONY : src/order.o
+
+# target to build an object file
+src/order.cpp.o:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/order.cpp.o
+.PHONY : src/order.cpp.o
+
+src/order.i: src/order.cpp.i
+
+.PHONY : src/order.i
+
+# target to preprocess a source file
+src/order.cpp.i:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/order.cpp.i
+.PHONY : src/order.cpp.i
+
+src/order.s: src/order.cpp.s
+
+.PHONY : src/order.s
+
+# target to generate assembly for a file
+src/order.cpp.s:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/order.cpp.s
+.PHONY : src/order.cpp.s
+
 src/part.o: src/part.cpp.o
 
 .PHONY : src/part.o
@@ -420,6 +447,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/order.o"
+	@echo "... src/order.i"
+	@echo "... src/order.s"
 	@echo "... src/part.o"
 	@echo "... src/part.i"
 	@echo "... src/part.s"

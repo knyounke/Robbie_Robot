@@ -30,6 +30,10 @@ vector
 part.h
 ../include/part.h
 
+../include/order.h
+shop.h
+../include/shop.h
+
 ../include/part.h
 iostream
 -
@@ -59,14 +63,14 @@ head.h
 ../include/head.h
 locomotor.h
 ../include/locomotor.h
+battery.h
+../include/battery.h
 iostream
 -
 string
 -
 vector
 -
-battery.h
-../include/battery.h
 
 ../include/torso.h
 
@@ -133,6 +137,10 @@ shop.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
 iostream
 -
+
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/order.cpp
+order.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/order.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.cpp
 part.h

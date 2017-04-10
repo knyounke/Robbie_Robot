@@ -7,10 +7,11 @@
 #include "arm.h"
 #include "head.h"
 #include "locomotor.h"
+#include "battery.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
-#include "battery.h"
 
 
 class Shop
@@ -22,7 +23,7 @@ private:
 	vector<Locomotor> locomotors;
 	vector<Battery> batteries;
 	vector<Torso> torsos;
-	vector< vector <Part> > robotParts;
+	vector< vector <Part*> > robotParts;
 
 	int armcount = 0;
 	int torsocount = 0;

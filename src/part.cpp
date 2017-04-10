@@ -8,32 +8,32 @@
 using namespace std;
 
     //getters
-   	string Part::getName()
+   	string const Part::getName()
     	{
            return _name;
     	}
     
-   	int Part::getNumberOfParts()
+   	int const Part::getNumberOfParts()
     	{
            return _numberOfParts;
     	}
     
-    	int Part::getPartNumber()
+    	int const Part::getPartNumber()
     	{
           return _partNumber;
     	}
     
-    	string Part::getDescription()
+    	string const Part::getDescription()
         {
            return _description;
         }
 
-        string Part::getType()
+        string const Part::getType()
 	{
            return _type;
     	}
 
-    	double Part::getPrice()
+    	double const Part::getPrice()
 	{
            return _price;
     	}

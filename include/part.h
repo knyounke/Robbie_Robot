@@ -24,12 +24,12 @@ class Part
     	Part(){ };
 
     //getters
-   	string getName();
-   	int getNumberOfParts();
-    	int getPartNumber();
-    	string getDescription();
-        string getType();
-    	double getPrice();
+   	string const getName();
+   	int const getNumberOfParts();
+    	int const getPartNumber();
+    	string const getDescription();
+        string const getType();
+    	double const getPrice();
 
    //setters
         void setName(string name);

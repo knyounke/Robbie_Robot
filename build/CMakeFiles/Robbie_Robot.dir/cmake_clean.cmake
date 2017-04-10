@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Robbie_Robot.dir/src/arm.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/main.cpp.o"
   "CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o"
+  "CMakeFiles/Robbie_Robot.dir/src/order.cpp.o"
   "Robbie_Robot.pdb"
   "Robbie_Robot"
 )

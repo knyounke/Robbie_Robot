@@ -39,6 +39,18 @@ CMakeFiles/Robbie_Robot.dir/src/main.cpp.o
  ../include/shop.h
  ../include/torso.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
+CMakeFiles/Robbie_Robot.dir/src/order.cpp.o
+ ../include/arm.h
+ ../include/battery.h
+ ../include/controller.h
+ ../include/head.h
+ ../include/locomotor.h
+ ../include/order.h
+ ../include/part.h
+ ../include/robot_model.h
+ ../include/shop.h
+ ../include/torso.h
+ /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/order.cpp
 CMakeFiles/Robbie_Robot.dir/src/part.cpp.o
  ../include/part.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.cpp
