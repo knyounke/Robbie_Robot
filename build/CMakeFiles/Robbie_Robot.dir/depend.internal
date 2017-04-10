@@ -60,6 +60,9 @@ CMakeFiles/Robbie_Robot.dir/src/part.cpp.o
 CMakeFiles/Robbie_Robot.dir/src/robot_model.cpp.o
  ../include/robot_model.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
+CMakeFiles/Robbie_Robot.dir/src/sales_associate.cpp.o
+ ../include/sales_associate.h
+ /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/sales_associate.cpp
 CMakeFiles/Robbie_Robot.dir/src/shop.cpp.o
  ../include/arm.h
  ../include/battery.h

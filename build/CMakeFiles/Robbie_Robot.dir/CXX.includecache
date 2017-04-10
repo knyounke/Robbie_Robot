@@ -54,6 +54,10 @@ exception
 string
 -
 
+../include/sales_associate.h
+string
+-
+
 ../include/shop.h
 part.h
 ../include/part.h
@@ -167,6 +171,10 @@ exception
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.cpp
 robot_model.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
+
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/sales_associate.cpp
+sales_associate.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/sales_associate.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.cpp
 shop.h
