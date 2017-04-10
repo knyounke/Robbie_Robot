@@ -1,6 +1,8 @@
 #ifndef ___CONTROLLER_H
 #define ___CONTROLLER_H 2017
 #include <iostream>
+#include "customer.h"
+#include "sales_associate.h"
 #include "part.h"
 #include "robot_model.h"
 #include "torso.h"
@@ -18,6 +20,8 @@ class Shop
 {
 
 private:
+	vector<Sales_Associate> salesAssociates;
+	vector<Customer> customers;
 	vector<Arm> arms;
 	vector<Head> heads;
 	vector<Locomotor> locomotors;
