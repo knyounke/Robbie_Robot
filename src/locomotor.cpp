@@ -1,5 +1,4 @@
 #include "locomotor.h"
-#include "part.h"
 
 
 	double Locomotor::getMaxSpeed()

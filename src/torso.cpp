@@ -1,4 +1,3 @@
-#include "part.h"
 #include "torso.h"
 
 

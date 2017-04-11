@@ -1,18 +1,20 @@
-#ifndef ___CONTROLLER_H
-#define ___CONTROLLER_H 2017
+#ifndef ___SHOP_H
+#define ___SHOP_H 2017
 
 #include "part.h"
-#include "robot_model.h"
-#include "torso.h"
 #include "arm.h"
-#include "head.h"
-#include "locomotor.h"
+#include "torso.h"
 #include "battery.h"
+#include "locomotor.h"
+#include "head.h"
+
+#include "order.h"
 
 #include <iostream>
 #include <string>
 #include <vector>
 
+using namespace std;
 
 class Shop
 {

@@ -2,6 +2,7 @@
 #define ___HEAD 2017
 
 
+#include "part.h"
 
 class Head : public Part
 {

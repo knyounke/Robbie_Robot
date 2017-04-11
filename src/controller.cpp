@@ -1,12 +1,5 @@
 #include "controller.h"
-#include "shop.h"
-#include "battery.h"
-#include "part.h"
-#include "locomotor.h"
-#include "robot_model.h"
-#include "torso.h"
-#include "arm.h"
-#include "head.h"
+
 
 using namespace std;
 

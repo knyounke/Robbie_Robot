@@ -1,6 +1,7 @@
 #ifndef __BATTERY_H
 #define ___BATTERY 2017
 
+#include "part.h"
 
 class Battery : public Part
 {

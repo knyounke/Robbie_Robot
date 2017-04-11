@@ -1,6 +1,4 @@
 #include "arm.h"
-#include "part.h"
-#include "controller.h"
 
 
 

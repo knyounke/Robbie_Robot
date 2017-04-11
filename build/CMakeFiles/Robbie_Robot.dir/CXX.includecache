@@ -9,10 +9,10 @@
 ../include/arm.h
 part.h
 ../include/part.h
-controller.h
-../include/controller.h
 
 ../include/battery.h
+part.h
+../include/part.h
 
 ../include/controller.h
 part.h
@@ -29,14 +29,16 @@ string
 -
 
 ../include/head.h
+part.h
+../include/part.h
 
 ../include/locomotor.h
 part.h
 ../include/part.h
 
 ../include/order.h
-shop.h
-../include/shop.h
+robot_model.h
+../include/robot_model.h
 
 ../include/part.h
 iostream
@@ -61,18 +63,18 @@ string
 ../include/shop.h
 part.h
 ../include/part.h
-robot_model.h
-../include/robot_model.h
-torso.h
-../include/torso.h
 arm.h
 ../include/arm.h
-head.h
-../include/head.h
-locomotor.h
-../include/locomotor.h
+torso.h
+../include/torso.h
 battery.h
 ../include/battery.h
+locomotor.h
+../include/locomotor.h
+head.h
+../include/head.h
+order.h
+../include/order.h
 iostream
 -
 string
@@ -81,72 +83,36 @@ vector
 -
 
 ../include/torso.h
+part.h
+../include/part.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp
 arm.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.h
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
-controller.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.cpp
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 battery.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp
 controller.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.h
-shop.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
-battery.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
-locomotor.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.h
-robot_model.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
-torso.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.h
-arm.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.h
-head.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.cpp
 customer.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/customer.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.cpp
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
+head.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.cpp
 locomotor.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.h
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
-robot_model.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/robot_model.h
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 controller.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.h
-arm.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.h
-torso.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.h
-battery.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.h
-head.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/head.h
-shop.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
 iostream
 -
 
@@ -181,8 +147,6 @@ shop.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/shop.h
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.cpp
-part.h
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/part.h
 torso.h
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/torso.h
 
