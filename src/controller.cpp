@@ -23,6 +23,8 @@ using namespace std;
 	cout << "Description: " << endl;
 	cin.ignore();
 	getline(cin, bdescription);
+
+	(s.batteries).push_back(Battery{bname, "Battery", bprice, bdescription});
 	
 	
 	}
@@ -108,9 +110,6 @@ using namespace std;
 	void Controller::newLocomotor() 
 	{
 
-	
-	
-
 	string lname;
 	string ldescription;
 	double lprice;
@@ -130,7 +129,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, ldescription);
 
-
+	
 	}
 
 
@@ -184,18 +183,25 @@ using namespace std;
 	}
 	void Controller::printParts(int t) 
 	{
-/*
-	vector< vector<Part*> > vectorOfParts = Shop.robotParts;
-        vector<Torso> torsos = vectorOfParts[0];
-        vector<Head> heads = vectorOfParts[1];
-        vector<Arm> arms = vectorOfParts[2];
-        vector<Locomotor> locomotors = vectorOfParts[3];
-        vector<Battery> batteries = vectorOfParts[4];
+
+        vector<Torso*> torsos;
+        vector<Head*> heads;
+        vector<Arm*> arms;
+        vector<Locomotor*> locomotors;
+        vector<Battery*> batteries;
 
 	string name;
-	switch(t){
+	int j = 0;
+	/*switch(t){
                 case 0: 
                     name = "Torsos";
+				cout << name << ": " << endl;
+            		 cout << "Part Number, Name, Price, Description" << endl;
+           	while(j < 10)
+		{
+		cout << torsos.partNumber << " ," << torsos.name << " ," torsos.price << " , " torsos.description << endl;
+		j++;
+		}
                     break;
                 case 1:
                     name = "Heads";
@@ -214,19 +220,9 @@ using namespace std;
                     return;
             }
             
- 		cout << name << ": " << endl;
-             cout << "Part Number, Name, Price, Description" << endl;
-            for(int j = 0; j < vectorOfPart<t>.size; j++)
-            {
-                if(vectorOfParts[t][j] != null){
-                cout << vectorOfParts[t][j].getPartNumber() << ", " <<
-                cout << vectorOfParts[t][j].getName() << ", " <<
-                cout << vectorOfParts[t][j].getDescription() << ", " << 
-                cout << vectorOfParts[t][j].getPrice() << endl;
-        
-                }
-            }
-	  */
+ 	
+            }  */
+	
 
 	}
 	void Controller::createModel() 

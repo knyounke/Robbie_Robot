@@ -1,7 +1,9 @@
 #ifndef __BATTERY_H
 #define ___BATTERY 2017
-
+#include <string>
 #include "part.h"
+
+using namespace std;
 
 class Battery : public Part
 {
@@ -11,7 +13,8 @@ class Battery : public Part
 
     
     public:
-	Battery() {};
+	Battery(string name, string type, double price, string description ) : Part{name, type, price, description} {}
+	Battery() {}
 
  	double getEnergy();
    	double getMaxPower();

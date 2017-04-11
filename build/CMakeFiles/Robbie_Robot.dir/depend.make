@@ -9,8 +9,16 @@ CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: ../include/battery.h
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: ../include/part.h
 CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o: ../src/battery.cpp
 
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/arm.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/battery.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/controller.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/head.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/locomotor.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/order.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/part.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/robot_model.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/shop.h
+CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../include/torso.h
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o: ../src/controller.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o: ../include/customer.h
@@ -24,8 +32,16 @@ CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o: ../include/locomotor.h
 CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o: ../include/part.h
 CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o: ../src/locomotor.cpp
 
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/arm.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/battery.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/controller.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/head.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/locomotor.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/order.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/part.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/robot_model.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/shop.h
+CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../include/torso.h
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/Robbie_Robot.dir/src/order.cpp.o: ../include/order.h

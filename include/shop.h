@@ -20,13 +20,8 @@ class Shop
 {
 
 private:
-	vector<Arm> arms;
-	vector<Head> heads;
-	vector<Locomotor> locomotors;
-	vector<Battery> batteries;
-	vector<Torso> torsos;
-	vector< vector <Part*> > robotParts;
-
+	
+	
 	int armcount = 0;
 	int torsocount = 0;
 	int locomotorcount = 0;
@@ -35,6 +30,13 @@ private:
 
 
 public:
+	vector<Arm> arms;
+	vector<Head> heads;
+	vector<Locomotor> locomotors;
+	vector<Battery> batteries;
+	vector<Torso> torsos;
+	vector< vector <Part*> > robotParts;
+
 	Shop() {}
 	void createTorso(string n, double p, string d);
 	void createBattery(string n, double p, string d);

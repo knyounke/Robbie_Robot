@@ -11,12 +11,16 @@ part.h
 ../include/part.h
 
 ../include/battery.h
+string
+-
 part.h
 ../include/part.h
 
 ../include/controller.h
 part.h
 ../include/part.h
+shop.h
+../include/shop.h
 iostream
 -
 string

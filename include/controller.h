@@ -2,7 +2,7 @@
 #define ___CONTROLLER_H 2017
 
 #include "part.h"
-
+#include "shop.h"
 
 #include <iostream>
 #include <string>
@@ -14,6 +14,8 @@ using namespace std;
 
 class Controller
 {
+   protected:
+	Shop s;
    public:	
 		
 	int choice = 0;

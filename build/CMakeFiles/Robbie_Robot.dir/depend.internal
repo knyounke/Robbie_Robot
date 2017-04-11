@@ -10,8 +10,16 @@ CMakeFiles/Robbie_Robot.dir/src/battery.cpp.o
  ../include/part.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/battery.cpp
 CMakeFiles/Robbie_Robot.dir/src/controller.cpp.o
+ ../include/arm.h
+ ../include/battery.h
  ../include/controller.h
+ ../include/head.h
+ ../include/locomotor.h
+ ../include/order.h
  ../include/part.h
+ ../include/robot_model.h
+ ../include/shop.h
+ ../include/torso.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/controller.cpp
 CMakeFiles/Robbie_Robot.dir/src/customer.cpp.o
  ../include/customer.h
@@ -25,8 +33,16 @@ CMakeFiles/Robbie_Robot.dir/src/locomotor.cpp.o
  ../include/part.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/locomotor.cpp
 CMakeFiles/Robbie_Robot.dir/src/main.cpp.o
+ ../include/arm.h
+ ../include/battery.h
  ../include/controller.h
+ ../include/head.h
+ ../include/locomotor.h
+ ../include/order.h
  ../include/part.h
+ ../include/robot_model.h
+ ../include/shop.h
+ ../include/torso.h
  /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/main.cpp
 CMakeFiles/Robbie_Robot.dir/src/order.cpp.o
  ../include/order.h
