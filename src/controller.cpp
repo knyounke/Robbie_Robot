@@ -24,7 +24,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, bdescription);
 
-	(s.batteries).push_back(Battery{bname, "Battery", bprice, bdescription});
+	s.createBattery(bname, bprice, bdescription);
 	
 	
 	}
@@ -52,6 +52,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, tdescription);
 	
+s.createTorso(tname, tprice, tdescription);
 	}
 
 
@@ -78,6 +79,8 @@ using namespace std;
 	cout << "Description: " << endl;
 	cin.ignore();
 	getline(cin, hdescription);
+
+	s.createHead(hname, hprice, hdescription);
 	}
 
 	void Controller::newArm()
@@ -104,6 +107,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, adescription);
 
+s.createArm(aname, aprice, adescription);
 
 	}
 
@@ -129,7 +133,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, ldescription);
 
-	
+	s.createLocomotor(lname, lprice, ldescription);
 	}
 
 
