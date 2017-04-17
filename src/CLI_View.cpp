@@ -1,6 +1,5 @@
 #include "CLI_View.h"
 
-
 #include <string>
 #include <iostream>
 #include <stdlib.h>
@@ -99,4 +98,5 @@ string  View::getDescription()
 	cout << "Description: " << endl;
 	cin.ignore();
 	getline(cin, description);
+ return description;
 } 
