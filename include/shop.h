@@ -43,7 +43,7 @@ public:
 	void createHead(string n, double p, string d);
 	void createArm(string n, double p, string d);
 	void createLocomotor(string n, double p, string d);
-
+	void printVectors(int t);
 
 };
 

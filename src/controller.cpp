@@ -52,7 +52,7 @@ using namespace std;
 	cin.ignore();
 	getline(cin, tdescription);
 	
-s.createTorso(tname, tprice, tdescription);
+	s.createTorso(tname, tprice, tdescription);
 	}
 
 
@@ -107,7 +107,7 @@ s.createTorso(tname, tprice, tdescription);
 	cin.ignore();
 	getline(cin, adescription);
 
-s.createArm(aname, aprice, adescription);
+	s.createArm(aname, aprice, adescription);
 
 	}
 
@@ -188,44 +188,22 @@ s.createArm(aname, aprice, adescription);
 	void Controller::printParts(int t) 
 	{
 
-        vector<Torso*> torsos;
-        vector<Head*> heads;
-        vector<Arm*> arms;
-        vector<Locomotor*> locomotors;
-        vector<Battery*> batteries;
+	 {
+		
+		int choice;
+		cout << "What would you like to view?" << endl;
+		cout << "0) Torsos" << endl;
+		cout << "1) Heads" << endl;
+		cout << "2) Ams" << endl;
+		cout << "3) Locomotors" << endl;
+		cout << "4) Batteries"<< endl;
+		cout << "5) Exit" << endl;
+		cin >> choice;
 
-	string name;
-	int j = 0;
-	/*switch(t){
-                case 0: 
-                    name = "Torsos";
-				cout << name << ": " << endl;
-            		 cout << "Part Number, Name, Price, Description" << endl;
-           	while(j < 10)
-		{
-		cout << torsos.partNumber << " ," << torsos.name << " ," torsos.price << " , " torsos.description << endl;
-		j++;
-		}
-                    break;
-                case 1:
-                    name = "Heads";
-                    break;
-                case 2:
-                    name = "Arms";
-                    break;
-                case 3:
-                    name = "Locomotors";
-                    break;
-                case 4:
-                    name = "Batteries";
-                    break;
-                default:
-                 	cout<< "Unknown category." << endl;
-                    return;
-            }
-            
+		s.printVectors(choice);
+
  	
-            }  */
+            } 
 	
 
 	}

@@ -66,3 +66,46 @@
 		locomotorcount++;
 
 	}
+
+	void Shop::printVectors(int t)
+	{
+
+	string name;
+	int j;
+	
+	switch(t){
+                case 0: 
+                    name = "Torsos";
+				cout << name << ": " << endl;
+            		 cout << "Part Number, Name, Price, Description" << endl;
+           	while(j < torsocount)
+		{
+		
+		j++;
+		}
+                    break;
+                case 1:
+                    name = "Heads";
+                    break;
+                case 2:
+                    name = "Arms";
+                    break;
+                case 3:
+                    name = "Locomotors";
+                    break;
+                case 4:
+                    name = "Batteries";
+                    break;
+		case 5:
+			cout << "Exiting." << endl;
+			break;
+                default:
+                 	cout<< "Unknown category." << endl;
+                    return;
+            }
+            
+ 	
+         }  
+
+
+
