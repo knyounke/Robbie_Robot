@@ -47,18 +47,9 @@ using namespace std;
 	double hprice;
 
 	v.newHeadMenu();
-	cout << "Name: " << endl;
-	cin.ignore();
-	getline(cin, hname);
-
-	cout << "Enter price: " << endl;
-	cin >> hprice;
-		if(hprice < 0)
-		cout << "Invalid price. Cannot be negative." << endl;
-
-	cout << "Description: " << endl;
-	cin.ignore();
-	getline(cin, hdescription);
+	hname = v.getName();
+	hprice = v.getPrice();
+	hdescription = v.getDescription();
 
 	s.createHead(hname, hprice, hdescription);
 	}
@@ -73,19 +64,10 @@ using namespace std;
 	double aprice;
 
 
-	cout << "----Create Arm----" << endl;
-	cout << "Name: " << endl;
-	cin.ignore();
-	getline(cin, aname);
-
-	cout << "Enter price: " << endl;
-	cin >> aprice;
-		if(aprice < 0)
-		cout << "Invalid price. Cannot be negative." << endl;
-
-	cout << "Description: " << endl;
-	cin.ignore();
-	getline(cin, adescription);
+	v.newArmMenu();
+	aname = v.getName();
+	aprice = v.getPrice();
+	adescription = v.getDescription();
 
 	s.createArm(aname, aprice, adescription);
 
@@ -98,20 +80,10 @@ using namespace std;
 	string ldescription;
 	double lprice;
 
-
-	cout << "----Create Locomotor----" << endl;
-	cout << "Name: " << endl;
-	cin.ignore();
-	getline(cin, lname);
-
-	cout << "Enter price: " << endl;
-	cin >> lprice;
-		if(lprice < 0)
-		cout << "Invalid price. Cannot be negative." << endl;
-
-	cout << "Description: " << endl;
-	cin.ignore();
-	getline(cin, ldescription);
+	v.newLocomotorMenu();
+	lname = v.getName();
+	lprice = v.getPrice();
+	ldescription = v.getDescription();
 
 	s.createLocomotor(lname, lprice, ldescription);
 	}

@@ -20,7 +20,7 @@ void View::createModelMenu()
 void View::newArmMenu()
 {
 
-
+cout << "----Create Arm----" << endl;
 }
 
 void View::newHeadMenu()
@@ -42,6 +42,7 @@ void View::newLocomotorMenu()
 {
 
 
+	cout << "----Create Locomotor----" << endl;
 }
 
 void View::newBatteryMenu()
