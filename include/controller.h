@@ -3,6 +3,7 @@
 
 #include "part.h"
 #include "shop.h"
+#include "CLI_View.h"
 
 #include <iostream>
 #include <string>
@@ -16,6 +17,7 @@ class Controller
 {
    protected:
 	Shop s;
+	View v;
    public:	
 		
 	int choice = 0;

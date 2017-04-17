@@ -10,19 +10,10 @@ using namespace std;
 	string bdescription;
 	double bprice;
 
-
-	cout << "----Create Battery----" << endl;
-	cout << "Name: " << endl;
-	cin.ignore();
-	getline(cin, bname);
-
-	cout << "Enter price: " << endl;
-	cin >> bprice;
-		if(bprice < 0)
-		cout << "Invalid price. Cannot be negative." << endl;
-	cout << "Description: " << endl;
-	cin.ignore();
-	getline(cin, bdescription);
+	v.newBatteryMenu();
+	bname= v.getName();
+	bprice = (v.getPrice());
+	bdescription = v.getDescription();
 
 	s.createBattery(bname, bprice, bdescription);
 	
@@ -37,20 +28,10 @@ using namespace std;
 	string tdescription;
 	double tprice;
 
-
-	cout << "----Create Torso----" << endl;
-	cout << "Name: " << endl;
-	cin.ignore();
-	getline(cin, tname);
-
-	cout << "Enter price: " << endl;
-	cin >> tprice;
-		if(tprice < 0)
-		cout << "Invalid price. Cannot be negative." << endl;
-
-	cout << "Description: " << endl;
-	cin.ignore();
-	getline(cin, tdescription);
+	v.newTorsoMenu();
+	tname = v.getName();
+	tprice = v.getPrice();
+	tdescription = v.getDescription();
 	
 	s.createTorso(tname, tprice, tdescription);
 	}
@@ -65,8 +46,7 @@ using namespace std;
 	string hdescription;
 	double hprice;
 
-
-	cout << "----Create Head----" << endl;
+	v.newHeadMenu();
 	cout << "Name: " << endl;
 	cin.ignore();
 	getline(cin, hname);

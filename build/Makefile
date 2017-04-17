@@ -123,6 +123,33 @@ Robbie_Robot/fast:
 	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/build
 .PHONY : Robbie_Robot/fast
 
+src/CLI_View.o: src/CLI_View.cpp.o
+
+.PHONY : src/CLI_View.o
+
+# target to build an object file
+src/CLI_View.cpp.o:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/CLI_View.cpp.o
+.PHONY : src/CLI_View.cpp.o
+
+src/CLI_View.i: src/CLI_View.cpp.i
+
+.PHONY : src/CLI_View.i
+
+# target to preprocess a source file
+src/CLI_View.cpp.i:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/CLI_View.cpp.i
+.PHONY : src/CLI_View.cpp.i
+
+src/CLI_View.s: src/CLI_View.cpp.s
+
+.PHONY : src/CLI_View.s
+
+# target to generate assembly for a file
+src/CLI_View.cpp.s:
+	$(MAKE) -f CMakeFiles/Robbie_Robot.dir/build.make CMakeFiles/Robbie_Robot.dir/src/CLI_View.cpp.s
+.PHONY : src/CLI_View.cpp.s
+
 src/arm.o: src/arm.cpp.o
 
 .PHONY : src/arm.o
@@ -483,6 +510,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Robbie_Robot"
+	@echo "... src/CLI_View.o"
+	@echo "... src/CLI_View.i"
+	@echo "... src/CLI_View.s"
 	@echo "... src/arm.o"
 	@echo "... src/arm.i"
 	@echo "... src/arm.s"

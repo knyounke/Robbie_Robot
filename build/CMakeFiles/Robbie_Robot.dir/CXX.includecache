@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/CLI_View.h
+iostream
+-
+stdlib.h
+-
+string
+-
+
 ../include/arm.h
 part.h
 ../include/part.h
@@ -21,6 +29,8 @@ part.h
 ../include/part.h
 shop.h
 ../include/shop.h
+CLI_View.h
+../include/CLI_View.h
 iostream
 -
 string
@@ -89,6 +99,16 @@ vector
 ../include/torso.h
 part.h
 ../include/part.h
+
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/CLI_View.cpp
+CLI_View.h
+/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/CLI_View.h
+string
+-
+iostream
+-
+stdlib.h
+-
 
 /home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/src/arm.cpp
 arm.h
