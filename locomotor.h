@@ -1,8 +1,6 @@
 #ifndef __LOCOMOTOR_H
 #define ___LOCOMOTOR 2017
 
-#include "part.h"
-
 
 class Locomotor : public Part
 {

@@ -1,7 +1,6 @@
 #ifndef __TORSO_H
 #define ___TORSO 2017
 
-#include "part.h"
 
 class Torso: public Part
 {

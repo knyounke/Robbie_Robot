@@ -1,3 +1,0 @@
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/edit_cache.dir
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/rebuild_cache.dir
-/home/katie/Documents/Robbie_Robot_Shop/Robbie_Robot/build/CMakeFiles/Robbie_Robot.dir

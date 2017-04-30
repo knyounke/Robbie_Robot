@@ -1,7 +1,6 @@
 #ifndef ___ORDER__H___
 #define ___ORDER___2017___
 
-#include "robot_model.h"
 class Order 
 {
 

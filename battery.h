@@ -1,7 +1,6 @@
 #ifndef __BATTERY_H
 #define ___BATTERY 2017
 #include <string>
-#include "part.h"
 
 using namespace std;
 
