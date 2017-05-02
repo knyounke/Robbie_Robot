@@ -111,17 +111,30 @@ void Robot_Model::set_Name(string n)
 	name = n;
 };
 
-void Robot_Model::set_Price(double p)
+void Robot_Model::setPrice(double p)
 {
 
 price = p;
 };
 
 
-double Robot_Model::get_Price()
+double Robot_Model::getPrice()
 {
 
 return price;
+};
+
+
+string Robot_Model::getDescription()
+{
+
+return description;
+};
+
+
+void Robot_Model::setDescription(string d)
+{
+d = description;
 };
 
 void Robot_Model::set_Torso(int n)
@@ -305,7 +318,7 @@ class View {
     string get_part_list();
     void list_parts();
     void list_models();
- 
+    void catalog();
   private:
     Shop& shop;
 };
@@ -400,10 +413,24 @@ list += "-----Robot Models-----\n\n";
 
 }
 
+
+void View::catalog()
+{
+string list;
+list += "-----Robot Models-----\n\n";
+  for (int i=0; i<shop.modelcount; ++i) {
+    list += std::to_string(i) + ") Name: " + shop.models[i].name + " Price: "+ std::to_string((shop.models[i].price))+ " Description: " + shop.models[i].description + '\n';
+}
+
+  fl_message(list.c_str());
+
+
+}
+
 void Controller::get_model_menu()
 {
-string list, head, torso, battery, locomotor, arm, name;
-
+string list, head, torso, battery, locomotor, arm, name, description;
+double price;
 list += "-----Heads-----\n\n";
   for (int i=0; i<shop.headcount; ++i) {
     list += std::to_string(i) + ") " + shop.heads[i].Part::_name + '\n';
@@ -442,8 +469,12 @@ fl_message(list.c_str());
   battery = controller.get_string("Create Model", "Battery Number? ");
   locomotor = controller.get_string("Create Model", "Locomotor Number? ");  
   arm = controller.get_string("Create Model", "Arm Number? ");
+  description = controller.get_string("Create Model", "Description?");
 
  Robot_Model newModel(name, stoi(torso), stoi(head), stoi(battery), stoi(locomotor), stoi(arm));
+ newModel.setDescription(description);
+ price = shop.arms[stoi(arm)].Part::_price + shop.torsos[stoi(torso)].Part::_price + shop.heads[stoi(head)].Part::_price + shop.locomotors[stoi(locomotor)].Part::_price + shop.batteries[stoi(battery)].Part::_price;
+ newModel.setPrice(price);
  shop.models.push_back(newModel);
  shop.modelcount++;
 }
@@ -488,6 +519,11 @@ void ListModelsCB(Fl_Widget *w, void * p) {
 view.list_models();
 }
 
+
+void CatalogCB(Fl_Widget *w, void * p) {
+view.catalog();
+}
+
 //MENU ITEMS
 Fl_Menu_Bar * menubar;
 
@@ -498,7 +534,9 @@ Fl_Menu_Bar * menubar;
 {"&Add...", 0,0,0, FL_SUBMENU},
   { "&Robot Part", FL_ALT + 'A', (Fl_Callback*)AddPartCB}, {"&Robot Model...", FL_ALT + 'L', (Fl_Callback*)AddModelCB}, {"&Customer...", FL_ALT + 'O', (Fl_Callback*)AddCustomerCB}, {"&Sales Associate...", FL_ALT + 'O', (Fl_Callback*)AddSalesAssociateCB}, {0},
 {"&List All...", 0, 0, 0, FL_SUBMENU},
- {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)ListPartsCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)ListModelsCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, 
+ {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)ListPartsCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)ListModelsCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {0},
+{"&Browse...", 0, 0, 0, FL_SUBMENU},
+ {"&Catalog...", FL_ALT + 'd', (Fl_Callback*)CatalogCB}, 
 {0},
 { 0 }
 

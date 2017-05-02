@@ -9,7 +9,7 @@ class Robot_Model
 	private:
 	
 	int model_num;
-	double price;
+
 	int head;
 	int torso;
 	int battery;
@@ -20,13 +20,18 @@ class Robot_Model
 	public:
 
 	string name;
+	
+	string description;
+	double price;
 
 	Robot_Model(string n, int torso, int head, int battery,int locomotor, int arm);
 	double get_Parts_Total_Cost();
 	void set_Name(string n);
 	string get_Name();
-	void set_Price(double p);
-	double get_Price();
+	void setPrice(double p);
+        void setDescription(string s);
+	 string getDescription();
+	double getPrice();
 	void set_Torso(int n);
 	void set_Battery(int n);
 	void set_Arm(int n);
