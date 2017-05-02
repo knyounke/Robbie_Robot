@@ -11,11 +11,8 @@ using namespace std;
 class Shop
 {
 
-private:
 	
 	
-
-
 public:
 	
 	int armcount = 0;
@@ -23,11 +20,16 @@ public:
 	int locomotorcount = 0;
 	int headcount = 0;
 	int batterycount = 0;
+	int associatecount = 0;
+	int ordercount = 0;
+	int customercount = 0;
 	vector<Arm> arms;
 	vector<Head> heads;
 	vector<Locomotor> locomotors;
 	vector<Battery> batteries;
 	vector<Torso> torsos;
+	vector<Sales_Associate> associates;
+	vector<Customer> customers;
 	vector< vector <Part*> > robotParts;
 
 	Shop() {}

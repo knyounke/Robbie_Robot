@@ -212,8 +212,8 @@ class View {
    //string get_menu();
     string get_part_list();
     void list_parts();
-   /* string get_age_list();
-    string get_genre_list();
+  //  void get_model_menu();
+   /* string get_genre_list();
     string get_media_list();
     string get_help(); */
   private:
@@ -227,6 +227,7 @@ class Controller {
   private:
     int get_int(string title, string prompt, int max_int);
     string get_string(string title, string prompt);
+    void get_model_menu();
     Shop& shop;
     View& view;
 };
@@ -287,11 +288,60 @@ list += "-----Arms-----\n\n";
 
 
 
-
-
     fl_message_title("Robot Parts");
     fl_message_icon()->label("P");
     fl_message(list.c_str());
+
+}
+
+void Controller::get_model_menu()
+{
+string list, head, torso, battery, locomotor, arm, name;
+
+list += "-----Heads-----\n\n";
+  for (int i=0; i<shop.headcount; ++i) {
+    list += std::to_string(i) + ") " + shop.heads[i].Part::_name + '\n';
+  }
+
+
+list += "-----Torsos-----\n\n";
+  for (int i=0; i<shop.torsocount; ++i) {
+    list += std::to_string(i) + ") " + shop.torsos[i].Part::_name + '\n';
+  }
+
+
+list += "-----Batteries-----\n\n";
+  for (int i=0; i<shop.batterycount; ++i) {
+    list += std::to_string(i) + ") " + shop.batteries[i].Part::_name + '\n';
+  }
+
+
+list += "-----Locomotors-----\n\n";
+  for (int i=0; i<shop.locomotorcount; ++i) {
+    list += std::to_string(i) + ") " + shop.locomotors[i].Part::_name + '\n';
+  }
+
+
+list += "-----Arms-----\n\n";
+  for (int i=0; i<shop.armcount; ++i) {
+    list += std::to_string(i) + ") " + shop.arms[i].Part::_name + '\n';
+  }
+
+fl_message_title("Create a Model");
+fl_message(list.c_str());
+
+  name = controller.get_string("Create Model", "Model name?");
+  head = controller.get_string("Create Model", "Head Number? ");
+  torso = controller.get_string("Create Model", "Torso Number? ");
+  battery = controller.get_string("Create Model", "Battery Number? ");
+  locomotor = controller.get_string("Create Model", "Locomotor Number? ");  
+  arm = controller.get_string("Create Model", "Arm Number? ");
+
+ Head newHead = shop.heads[(stoi(head))];
+ Torso newTorso = shop.torsos[stoi(torso)];
+ Locomotor newLocomotor = shop.locomotors[stoi(locomotor)];
+ Battery newBattery = shop.batteries[stoi(battery)];
+ Arm newArm = shop.arms[stoi(arm)];
 
 }
 
@@ -307,7 +357,7 @@ controller.execute_cmd(1);
 }
 
 void AddModelCB(Fl_Widget *w, void * p) {
-win.hide(); 
+controller.execute_cmd(2);
 }
 
 void AddCustomerCB(Fl_Widget *w, void * p) {
@@ -397,6 +447,14 @@ void Controller::execute_cmd(int cmd) {
    else if(type == 5){Controller::shop.createLocomotor(name, price2, description);}
 
  }  
+ else if(cmd == 2)
+ { //Add Robot Model
+   
+  controller.get_model_menu();
+
+
+
+ }
    else 
    {
    string error = "**** Invalid command - type 9 for help";
