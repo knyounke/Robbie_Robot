@@ -25,14 +25,57 @@
 using namespace std;
 
 
-
-
-
  const int X = 640;
  const int Y = 200;
  Fl_Window win(X,Y, "Robbie Robot Shop");
 
-//callback functions
+
+
+class View {
+  public:
+    View(Shop& shop) : shop{shop} { }
+   //string get_menu();
+    string get_part_list();
+    /*string get_patron_list();&
+    string get_age_list();
+    string get_genre_list();
+    string get_media_list();
+    string get_help(); */
+  private:
+    Shop& shop;
+};
+
+class Controller {
+  public:
+    Controller (Shop& shop, View& view) : shop(shop), view(view) { }
+    void execute_cmd(int cmd);
+  private:
+    int get_int(string title, string prompt, int max_int);
+    string get_string(string title, string prompt);
+    Shop& shop;
+    View& view;
+};
+
+  Shop shop;
+  View view{shop};
+  Controller controller(shop, view);
+
+
+
+string View::get_part_list() {
+  string list = R"(
+----------------------------
+Types of Parts
+----------------------------
+1) Head
+2) Torso
+3) Battery
+4) Arm
+5) Locomotor 
+
+)";
+  return list;
+}
 
 
 //callback functions
@@ -43,7 +86,7 @@ win.hide();
 }
 
 void AddPartCB(Fl_Widget *w, void * p) {
-win.hide(); 
+controller.execute_cmd(1);
 }
 
 void AddModelCB(Fl_Widget *w, void * p) {
@@ -86,33 +129,7 @@ Fl_Menu_Bar * menubar;
 
 
 
-class View {
-  public:
-    View(Part& rps, Robot_Model& rms) : _rps{rps}, _rms{rms} { }
-   /* string get_menu();
-    string get_publication_list();
-    string get_patron_list();&
-    string get_age_list();
-    string get_genre_list();
-    string get_media_list();
-    string get_help(); */
-  private:
-    Part& _rps;
-    Robot_Model& _rms;
-};
 
-
-
-class Controller {
-  public:
-    Controller (Shop& shop, View& view) : shop(shop), view(view) { }
-    void execute_cmd(int cmd);
-  private:
-    int get_int(string title, string prompt, int max_int);
-    string get_string(string title, string prompt);
-    Shop& shop;
-    View& view;
-};
 
 int Controller::get_int(string title, string prompt, int max_int) {
   string error = "Please enter an integer between 0 and " + max_int;
@@ -134,6 +151,31 @@ string Controller::get_string(string title, string prompt) {
   fl_message_icon()->label("S");
   string result{fl_input(prompt.c_str(), 0)};
   return result;
+}
+
+
+void Controller::execute_cmd(int cmd) {
+  if (cmd == 1)
+ { // Add Robot Part
+    string name, description,price, type;
+    type = get_int("Part",view.get_part_list()+"Type? ", 5);
+    name = get_string("Part Name", "Name? ");
+
+    price = get_string(name, "Price? ");
+
+    description = get_string(name, "Description? ");
+
+
+    //shop.createTorso(name, static_cast<double>(price), description);
+
+ }  
+   else 
+   {
+   string error = "**** Invalid command - type 9 for help";
+   fl_message_title("ERROR"); 
+   fl_message_icon()->label("!");
+   fl_message(error.c_str());
+   }
 }
 
 int main() {
