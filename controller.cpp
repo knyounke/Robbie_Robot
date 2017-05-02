@@ -256,10 +256,37 @@ void View::list_parts()
 {
 string parts, list;
 
-list += "Heads\n\n";
+list += "-----Heads-----\n\n";
   for (int i=0; i<shop.headcount; ++i) {
     list += std::to_string(i) + ") " + shop.heads[i].Part::_name + '\n';
   }
+
+
+list += "-----Torsos-----\n\n";
+  for (int i=0; i<shop.torsocount; ++i) {
+    list += std::to_string(i) + ") " + shop.torsos[i].Part::_name + '\n';
+  }
+
+
+list += "-----Batteries-----\n\n";
+  for (int i=0; i<shop.batterycount; ++i) {
+    list += std::to_string(i) + ") " + shop.batteries[i].Part::_name + '\n';
+  }
+
+
+list += "-----Locomotors-----\n\n";
+  for (int i=0; i<shop.locomotorcount; ++i) {
+    list += std::to_string(i) + ") " + shop.locomotors[i].Part::_name + '\n';
+  }
+
+
+list += "-----Arms-----\n\n";
+  for (int i=0; i<shop.armcount; ++i) {
+    list += std::to_string(i) + ") " + shop.arms[i].Part::_name + '\n';
+  }
+
+
+
 
 
     fl_message_title("Robot Parts");
