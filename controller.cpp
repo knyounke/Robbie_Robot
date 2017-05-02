@@ -302,13 +302,10 @@ return locomotor;
 class View {
   public:
     View(Shop& _shop) : shop{_shop} { }
-   //string get_menu();
     string get_part_list();
     void list_parts();
-  //  void get_model_menu();
-   /* string get_genre_list();
-    string get_media_list();
-    string get_help(); */
+    void list_models();
+ 
   private:
     Shop& shop;
 };
@@ -387,6 +384,22 @@ list += "-----Arms-----\n\n";
 
 }
 
+
+void View::list_models()
+{
+string models, list;
+
+list += "-----Robot Models-----\n\n";
+  for (int i=0; i<shop.modelcount; ++i) {
+    list += std::to_string(i) + ") " + shop.models[i].name + '\n';
+}
+  fl_message_title("Robot Models");
+    fl_message_icon()->label("M");
+    fl_message(list.c_str());
+  
+
+}
+
 void Controller::get_model_menu()
 {
 string list, head, torso, battery, locomotor, arm, name;
@@ -432,7 +445,7 @@ fl_message(list.c_str());
 
  Robot_Model newModel(name, stoi(torso), stoi(head), stoi(battery), stoi(locomotor), stoi(arm));
  shop.models.push_back(newModel);
-
+ shop.modelcount++;
 }
 
 //callback functions
@@ -471,6 +484,11 @@ view.list_parts();
 }
 
 
+void ListModelsCB(Fl_Widget *w, void * p) {
+view.list_models();
+}
+
+//MENU ITEMS
 Fl_Menu_Bar * menubar;
 
   Fl_Menu_Item menuitems[] = {
@@ -480,7 +498,7 @@ Fl_Menu_Bar * menubar;
 {"&Add...", 0,0,0, FL_SUBMENU},
   { "&Robot Part", FL_ALT + 'A', (Fl_Callback*)AddPartCB}, {"&Robot Model...", FL_ALT + 'L', (Fl_Callback*)AddModelCB}, {"&Customer...", FL_ALT + 'O', (Fl_Callback*)AddCustomerCB}, {"&Sales Associate...", FL_ALT + 'O', (Fl_Callback*)AddSalesAssociateCB}, {0},
 {"&List All...", 0, 0, 0, FL_SUBMENU},
- {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)ListPartsCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, 
+ {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)ListPartsCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)ListModelsCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, 
 {0},
 { 0 }
 

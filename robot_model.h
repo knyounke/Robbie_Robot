@@ -8,7 +8,6 @@ class Robot_Model
 {
 	private:
 	
-	string name;
 	int model_num;
 	double price;
 	int head;
@@ -19,6 +18,8 @@ class Robot_Model
 
 
 	public:
+
+	string name;
 
 	Robot_Model(string n, int torso, int head, int battery,int locomotor, int arm);
 	double get_Parts_Total_Cost();
