@@ -211,8 +211,8 @@ class View {
     View(Shop& _shop) : shop{_shop} { }
    //string get_menu();
     string get_part_list();
-    /*string get_patron_list();&
-    string get_age_list();
+    void list_parts();
+   /* string get_age_list();
     string get_genre_list();
     string get_media_list();
     string get_help(); */
@@ -252,6 +252,21 @@ Types of Parts
   return list;
 }
 
+void View::list_parts()
+{
+string parts, list;
+
+list += "Heads\n\n";
+  for (int i=0; i<shop.headcount; ++i) {
+    list += std::to_string(i) + ") " + shop.heads[i].Part::_name + '\n';
+  }
+
+
+    fl_message_title("Robot Parts");
+    fl_message_icon()->label("P");
+    fl_message(list.c_str());
+
+}
 
 //callback functions
 
@@ -284,6 +299,9 @@ void OpenCB(Fl_Widget *w, void * p) {
 win.hide(); 
 }
 
+void ListPartsCB(Fl_Widget *w, void * p) {
+view.list_parts();
+}
 
 
 Fl_Menu_Bar * menubar;
@@ -295,7 +313,7 @@ Fl_Menu_Bar * menubar;
 {"&Add...", 0,0,0, FL_SUBMENU},
   { "&Robot Part", FL_ALT + 'A', (Fl_Callback*)AddPartCB}, {"&Robot Model...", FL_ALT + 'L', (Fl_Callback*)AddModelCB}, {"&Customer...", FL_ALT + 'O', (Fl_Callback*)AddCustomerCB}, {"&Sales Associate...", FL_ALT + 'O', (Fl_Callback*)AddSalesAssociateCB}, {0},
 {"&List All...", 0, 0, 0, FL_SUBMENU},
- {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)CloseCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, 
+ {"&Robot Parts...", FL_ALT + 'd', (Fl_Callback*)ListPartsCB}, {"&Robot Models...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, {"&Customers...", FL_ALT + 'l', (Fl_Callback*)CloseCB},  {"&Sales Associates...", FL_ALT + 'l', (Fl_Callback*)CloseCB}, 
 {0},
 { 0 }
 

@@ -11,7 +11,10 @@ using namespace std;
 
 class Part 
 {
-    private:
+   
+
+    public:
+	
 	string _name;
     	int _partNumber; 
     	string _type;
@@ -19,7 +22,6 @@ class Part
         string _description;
     	int _numberOfParts; 
 
-    public:
 	Part(string name, string type, double price, string description): _name{name}, _partNumber{_numberOfParts++}, _type{type}, _price{price}, _description{description} {};
     	Part(){ };
 

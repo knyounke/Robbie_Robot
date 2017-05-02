@@ -14,14 +14,15 @@ class Shop
 private:
 	
 	
+
+
+public:
+	
 	int armcount = 0;
 	int torsocount = 0;
 	int locomotorcount = 0;
 	int headcount = 0;
 	int batterycount = 0;
-
-
-public:
 	vector<Arm> arms;
 	vector<Head> heads;
 	vector<Locomotor> locomotors;
