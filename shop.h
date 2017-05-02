@@ -23,11 +23,13 @@ public:
 	int associatecount = 0;
 	int ordercount = 0;
 	int customercount = 0;
+	int modelcount = 0;
 	vector<Arm> arms;
 	vector<Head> heads;
 	vector<Locomotor> locomotors;
 	vector<Battery> batteries;
 	vector<Torso> torsos;
+	vector<Robot_Model> models;
 	vector<Sales_Associate> associates;
 	vector<Customer> customers;
 	vector< vector <Part*> > robotParts;

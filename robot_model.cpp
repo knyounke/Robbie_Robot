@@ -2,7 +2,7 @@
 
 
 
-Robot_Model::Robot_Model(string n, double p) : name{n}, price{p} { };
+Robot_Model::Robot_Model(string n, int head, int torso, int battery, int locomotor, int arm) : name{n}, torso{torso}, head{head}, battery{battery}, locomotor{locomotor}, arm{arm} { };
 
 double Robot_Model::get_Parts_Total_Cost()
 {

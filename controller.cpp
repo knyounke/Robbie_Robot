@@ -89,6 +89,99 @@ using namespace std;
            _numberOfParts++;
         }
 
+//MODEL IMPLEMENTATION
+
+Robot_Model::Robot_Model(string n, int head, int torso, int battery, int locomotor, int arm) : name{n}, torso{torso}, head{head}, battery{battery}, locomotor{locomotor}, arm{arm} { };
+
+double Robot_Model::get_Parts_Total_Cost()
+{
+
+return price;
+};
+
+string Robot_Model::get_Name()
+{
+
+return name;
+};
+
+
+void Robot_Model::set_Name(string n)
+{
+	name = n;
+};
+
+void Robot_Model::set_Price(double p)
+{
+
+price = p;
+};
+
+
+double Robot_Model::get_Price()
+{
+
+return price;
+};
+
+void Robot_Model::set_Torso(int n)
+{
+
+torso = n;
+
+};
+
+
+void Robot_Model::set_Battery(int n)
+{
+
+battery = n;
+
+};
+
+void Robot_Model::set_Arm(int n)
+{
+arm = n;
+};
+
+void Robot_Model::set_Head(int n)
+{
+head = n;
+};
+
+void Robot_Model::set_Locomotor(int n)
+{
+locomotor = n;
+};
+	
+int Robot_Model::get_Torso()
+{
+return torso;
+};
+
+
+int Robot_Model::get_Battery()
+{
+return battery;
+};
+	
+int Robot_Model::get_Arm()
+{
+return arm;
+};
+
+
+
+int Robot_Model::get_Head()
+{
+return head;
+};
+
+int Robot_Model::get_Locomotor()
+{
+
+return locomotor;
+};
 
 //SHOP IMPLEMENTATION
 
@@ -337,11 +430,8 @@ fl_message(list.c_str());
   locomotor = controller.get_string("Create Model", "Locomotor Number? ");  
   arm = controller.get_string("Create Model", "Arm Number? ");
 
- Head newHead = shop.heads[(stoi(head))];
- Torso newTorso = shop.torsos[stoi(torso)];
- Locomotor newLocomotor = shop.locomotors[stoi(locomotor)];
- Battery newBattery = shop.batteries[stoi(battery)];
- Arm newArm = shop.arms[stoi(arm)];
+ Robot_Model newModel(name, stoi(torso), stoi(head), stoi(battery), stoi(locomotor), stoi(arm));
+ shop.models.push_back(newModel);
 
 }
 
