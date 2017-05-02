@@ -24,6 +24,181 @@
 
 using namespace std;
 
+// PARTS IMPLEMENTATION
+
+    //getters
+   	string const Part::getName()
+    	{
+           return _name;
+    	}
+    
+   	int const Part::getNumberOfParts()
+    	{
+           return _numberOfParts;
+    	}
+    
+    	int const Part::getPartNumber()
+    	{
+          return _partNumber;
+    	}
+    
+    	string const Part::getDescription()
+        {
+           return _description;
+        }
+
+        string const Part::getType()
+	{
+           return _type;
+    	}
+
+    	double const Part::getPrice()
+	{
+           return _price;
+    	}
+    
+   //setters
+        void Part::setName(string name)
+       {
+        _name = name;
+       }
+    
+    	void Part::setPartNumber(int partNumber)
+	{
+           _partNumber = partNumber;
+    	}
+    
+    	void Part::setType(string type)
+	{
+           _type = type;
+    	}
+   
+   	void Part::setPrice(double price)
+	{
+          _price = price;
+   	}
+    
+    	void Part::setDescription(string description)
+	{
+       	   _description = description;
+        }
+
+    
+    	void Part::addParts()
+	{
+           _numberOfParts++;
+        }
+
+
+//SHOP IMPLEMENTATION
+
+	void Shop::createTorso(string n, double p, string d) 
+	{
+		Torso * T = new Torso();
+		T->setName(n);
+		T->setPrice(p);
+		T->setDescription(d);
+
+		torsos.push_back(*T);
+		torsocount++;
+		
+
+	};
+
+	void Shop::createBattery(string n, double p, string d) 
+	{
+		Battery * B = new Battery();
+		B->setName(n);
+		B->setPrice(p);
+		B->setDescription(d);
+
+		batteries.push_back(*B);
+		batterycount++;
+
+	};
+
+	void Shop::createHead(string n, double p, string d)
+	{
+
+		Head *  H = new Head();
+		H->setName(n);
+		H->setPrice(p);
+		H->setDescription(d);
+
+		heads.push_back(*H);
+		headcount++;
+
+	};
+
+	void Shop::createArm(string n, double p, string d)
+	{
+
+
+		Arm * A = new Arm();
+		A->setName(n);
+		A->setPrice(p);
+		A->setDescription(d);
+
+		arms.push_back(*A);
+		armcount++;
+
+	};
+
+	void Shop::createLocomotor(string n, double p, string d)
+	{
+
+
+		Locomotor * L = new Locomotor();
+		L->setName(n);
+		L->setPrice(p);
+		L->setDescription(d);
+
+		locomotors.push_back(*L);
+		locomotorcount++;
+
+	}
+
+	void Shop::printVectors(int t)
+	{
+
+	string name;
+	int j;
+	
+	switch(t){
+                case 0: 
+                    name = "Torsos";
+				cout << name << ": " << endl;
+            		 cout << "Part Number, Name, Price, Description" << endl;
+           	while(j < torsocount)
+		{
+		
+		j++;
+		}
+                    break;
+                case 1:
+                    name = "Heads";
+                    break;
+                case 2:
+                    name = "Arms";
+                    break;
+                case 3:
+                    name = "Locomotors";
+                    break;
+                case 4:
+                    name = "Batteries";
+                    break;
+		case 5:
+			cout << "Exiting." << endl;
+			break;
+                default:
+                 	cout<< "Unknown category." << endl;
+                    return;
+            }
+            
+ 	
+         }  
+
+
 
  const int X = 640;
  const int Y = 200;
@@ -33,7 +208,7 @@ using namespace std;
 
 class View {
   public:
-    View(Shop& shop) : shop{shop} { }
+    View(Shop& _shop) : shop{_shop} { }
    //string get_menu();
     string get_part_list();
     /*string get_patron_list();&
@@ -47,7 +222,7 @@ class View {
 
 class Controller {
   public:
-    Controller (Shop& shop, View& view) : shop(shop), view(view) { }
+    Controller (Shop& _shop, View& view) : shop(_shop), view(view) { }
     void execute_cmd(int cmd);
   private:
     int get_int(string title, string prompt, int max_int);
@@ -157,7 +332,10 @@ string Controller::get_string(string title, string prompt) {
 void Controller::execute_cmd(int cmd) {
   if (cmd == 1)
  { // Add Robot Part
-    string name, description,price, type;
+    string name, description,price;
+	int type;
+	double price2;
+
     type = get_int("Part",view.get_part_list()+"Type? ", 5);
     name = get_string("Part Name", "Name? ");
 
@@ -165,8 +343,13 @@ void Controller::execute_cmd(int cmd) {
 
     description = get_string(name, "Description? ");
 
+	price2 = stod(price);
 
-    //shop.createTorso(name, static_cast<double>(price), description);
+   if(type == 1){Controller::shop.createHead(name, price2 , description); }
+  else if(type == 2){Controller::shop.createTorso(name, price2, description);}
+  else if(type == 3){Controller::shop.createBattery(name, price2, description);}
+   else if (type == 4){Controller::shop.createArm(name, price2, description);}
+   else if(type == 5){Controller::shop.createLocomotor(name, price2, description);}
 
  }  
    else 
